@@ -28,19 +28,17 @@ public class BankAccount {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Membuat objek BankAccount dengan saldo awal 500.000
+        // saldo awal
         BankAccount account = new BankAccount("1234567890", 1000000);
 
         boolean exitProgram = false;
 
         while (!exitProgram) {
-            // Menampilkan menu
+            // menu
             System.out.println("Pilih opsi:");
             System.out.println("1. Deposit");
             System.out.println("2. Withdraw");
             System.out.println("3. Keluar");
-
-            // Mengambil input dari pengguna
             System.out.print("Masukkan opsi: ");
             int option = scanner.nextInt();
 
@@ -63,7 +61,7 @@ public class BankAccount {
                     break;
             }
 
-            // Mencetak saldo akhir
+            // saldo akhir
             System.out.println("Saldo akhir: " + account.getBalance());
             System.out.println();
         }

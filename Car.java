@@ -21,16 +21,12 @@ public class Car {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Membuat objek Car
         Car car = new Car("Honda", "Cary", 1999);
 
-        // Menampilkan menu
+        // menu
         System.out.println("Pilih opsi:");
         System.out.println("1. Start Engine");
         System.out.println("2. Stop Engine");
-
-        // Mengambil input dari pengguna
         System.out.print("Masukkan opsi: ");
         int option = scanner.nextInt();
 
